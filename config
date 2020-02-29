@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+        name = Jurica Zrna
+        email = jurica.zrna@ibm.com
+
+[remote "origin"]
+	url = http://git.apps.learn-ocp.bankart.lan/jzrna/cats-api.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
