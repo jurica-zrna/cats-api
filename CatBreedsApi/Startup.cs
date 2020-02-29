@@ -41,6 +41,13 @@ namespace CatBreedsApi
 
 //            app.UseHttpsRedirection();
 
+            app.Use((context, next) =>
+            {
+                context.Response.Headers["Access-Control-Allow-Origin"] = "*";
+                return next.Invoke();
+            });
+
+
             app.UseRouting();
 
 //            app.UseAuthorization();
