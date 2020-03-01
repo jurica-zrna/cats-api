@@ -29,6 +29,7 @@ namespace CatBreedsApi
         {
             services.AddDbContext<CatBreedContext>(options =>options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
+            services.AddHealthChecks();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +56,7 @@ namespace CatBreedsApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/healthz");
             });
         }
     }
