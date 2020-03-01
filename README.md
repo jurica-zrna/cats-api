@@ -4,4 +4,4 @@ Reads interesting data about casts from database and presents it as ```REST``` a
  - ```/api/CatBreed``` subdomain
 
 Needs a parameter in form of:
- - CUSTOMCONNSTR_DefaultConnection="Host=<hostname>;Port=<port>;Username=<user>;Password=<password>;Database=<database>;"
+ - ```CUSTOMCONNSTR_DefaultConnection="Host=<hostname>;Port=<port>;Username=<user>;Password=<password>;Database=<database>;"```
